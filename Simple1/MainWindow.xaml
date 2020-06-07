@@ -1,0 +1,25 @@
+﻿<Window x:Class="Simple1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Simple1"
+        mc:Ignorable="d"
+        Title="A Simple WPF App." Height="230" Width="380">
+    <Grid Margin="0,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Label  Grid.Row="0" x:Name="TitleLabel" Width="315.939" Content="A simple WPF application." HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="20.034,0,36.027,0" FontSize="16"/>
+        <StackPanel Margin="0,10,0,10" Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
+            <Label Content="Password" />
+            <PasswordBox x:Name="PasswordValue" Width="150" Height="20" Margin="10,0,0,0" />
+        </StackPanel>
+        <StackPanel Margin="0,10,0,10" Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center">
+            <Button x:Name="btnOK" Content="ok" Width="120" Click="BtnOKClick"  />
+        </StackPanel>
+    </Grid>
+</Window>
